@@ -25,7 +25,7 @@ def self.find_or_create_by_name(name)
   if @@all.find { |artist| artist.name == name }
      @@all.find { |artist| artist.name == name }
   else 
-    self.new(name)
+    self.new(name).save
   end 
 end 
 
