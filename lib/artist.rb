@@ -18,7 +18,8 @@ def self.all
 end 
 
 def save 
-  self.all << self 
+  @@all << self
+  self
 end
   
 end 
